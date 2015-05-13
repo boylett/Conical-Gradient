@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conical Gradient Demo</title>
+    <script type="text/javascript" src="draw-conical-gradient.js"></script>
+    <script type="text/javascript">
+      $(function()
+      {
+          var canvas = document.getElementsByTagName('canvas').item(0),
+          		context = canvas.getContext('2d');
+          	
+          context.save();
+      	
+          context.beginPath();
+          context.arc(250, 250, 250, 0, Math.PI * 2);
+          context.clip();
+      	
+      	  context.createConicalGradient(0, 0, 500, 500, '#999', '#FFF', '#777', '#FFF');
+      	
+          context.restore();
+      });
+    </script>
+    <style type="text/css">
+      body
+      {
+        margin: 0;
+        padding: 0;
+        background: #333;
+      }
+      
+      canvas
+      {
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="500" height="500"></canvas>
+  </body>
+</html>
