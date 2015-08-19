@@ -1,2 +1,2 @@
 # ConicalGradient
-Javascript function that draws a conical gradient onto a canvas
+[See it in action](http://codepen.io/boylett/pen/PqNmpZ)
